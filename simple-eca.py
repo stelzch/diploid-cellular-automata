@@ -2,7 +2,7 @@ from time import sleep
 from random import random
 
 RULE_NUMBER = 30
-N = 240
+N = 100
 ON_PERCENTAGE = 0.01
 LINES_PER_SECOND = 25
 SYMBOLS = {
