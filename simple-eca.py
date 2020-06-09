@@ -1,9 +1,9 @@
 from time import sleep
 from random import random
 
-RULE_NUMBER = 30
+RULE_NUMBER = 85
 N = 100
-ON_PERCENTAGE = 0.01
+ON_PERCENTAGE = 0.4
 LINES_PER_SECOND = 25
 SYMBOLS = {
     0: " ",
