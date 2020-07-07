@@ -23,7 +23,6 @@ bool *simulate(double lambda, int *seed) {
     for(int i=0; i<n; i++) {
         int r = rand_r(seed); 
         state_old[i] = (r < RAND_MAX / 2) ? 1 : 0;
-        //printf("%s", state[i] == 1 ? "#" : " ");
     }
     //printf("\n");
 
@@ -89,7 +88,7 @@ int main(int argc, char **argv) {
     }
     fclose(r);
 
-    const int lambdas[] = {1,2,3,4,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,96,97,98,99,100};
+    const int lambdas[] = {0,1,2,3,4,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,96,97,98,99,100};
     const int num_lambdas = sizeof(lambdas) / sizeof(int);
 
     printf("lambda,density,kink_density\n");
