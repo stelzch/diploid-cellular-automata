@@ -64,9 +64,9 @@ double get_kink_density(bool *state) {
 
     int sum = 0;
 
-    while (j < n) {
+    while (i < n) {
 
-        if(state[i] != state[j]) sum += 1;
+        if(state[i] != state[j % n]) sum += 1;
 
         i++;
         j++;
